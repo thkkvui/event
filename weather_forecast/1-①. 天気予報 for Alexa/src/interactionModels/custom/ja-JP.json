@@ -1,0 +1,195 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "天気予報",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "何を言えばいいの",
+            "使い方がわからない",
+            "ヘルプ"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "もうないよ",
+            "終わりにして",
+            "ストップ"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "CurrentWeatherIntent",
+          "slots": [
+            {
+              "name": "city",
+              "type": "AMAZON.City"
+            }
+          ],
+          "samples": [
+            "{city} の天気",
+            "{city} はどう"
+          ]
+        },
+        {
+          "name": "A_WeatherIntent",
+          "slots": [
+            {
+              "name": "city",
+              "type": "AMAZON.City"
+            },
+            {
+              "name": "date",
+              "type": "AMAZON.DATE"
+            }
+          ],
+          "samples": [
+            "{city} の {date} の天気",
+            "{date} の {city} の天気が知りたい",
+            "{date} の {city} の天気はどう",
+            "{date} の {city} の天気を教えて",
+            "{date} の {city} の天気"
+          ]
+        },
+        {
+          "name": "B_WeatherIntent",
+          "slots": [
+            {
+              "name": "city",
+              "type": "AMAZON.City"
+            },
+            {
+              "name": "date",
+              "type": "AMAZON.DATE"
+            },
+            {
+              "name": "time",
+              "type": "AMAZON.TIME"
+            }
+          ],
+          "samples": [
+            "{date} の {time} の {city} の天気",
+            "{time} の {city} の天気はどう",
+            "{time} の {city} の天気",
+            "{date}  の {time} の {city} の天気が知りたい",
+            "{date} の  {time} の {city} の天気を教えて",
+            "{date}  {time} の {city} の天気"
+          ]
+        },
+        {
+          "name": "ForeignCityIntent",
+          "slots": [
+            {
+              "name": "ForeignCity",
+              "type": "ForeignCity"
+            },
+            {
+              "name": "date",
+              "type": "AMAZON.DATE"
+            },
+            {
+              "name": "time",
+              "type": "AMAZON.TIME"
+            }
+          ],
+          "samples": [
+            "{date} の {time} の {ForeignCity} の天気",
+            "{date} の {ForeignCity} の天気",
+            "{ForeignCity} の天気"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "シンガポール"
+              }
+            },
+            {
+              "name": {
+                "value": "ドイツ",
+                "synonyms": [
+                  "フランクフルト",
+                  "ベルリン"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "フランス",
+                "synonyms": [
+                  "パリ"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "イギリス",
+                "synonyms": [
+                  "ロンドン"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "インド",
+                "synonyms": [
+                  "ムンバイ"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "オーストラリア",
+                "synonyms": [
+                  "シドニー",
+                  "キャンベラ"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "アメリカ",
+                "synonyms": [
+                  "ニューヨーク",
+                  "ロサンゼルス",
+                  "サンフランシスコ"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "中国",
+                "synonyms": [
+                  "上海",
+                  "北京"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "カナダ",
+                "synonyms": [
+                  "オタワ"
+                ]
+              }
+            }
+          ],
+          "name": "ForeignCity"
+        }
+      ]
+    }
+  },
+  "version": "45"
+}
