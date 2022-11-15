@@ -20,7 +20,6 @@
 ---
 1. 天気予報APIの選択
   - OpenWeatherMap
-  - Yahoo 気象予報API
   ---
 2. 基本codeの実装
   - []
@@ -42,18 +41,13 @@
 
 ## **1. 天気予報APIの選択**
 
-　天気予報のAPIについては、OpenWeatherMapとYahoo 気象予報APIの2つを使用します。予報の精度やAPIの仕様等については深く検証していませんが、使い勝手が悪いという印象は個人的にはありません。APIの詳細は、以下の各リンクをご参照ください。
+　天気予報のAPIは、OpenWeatherMapを使用します。予報の精度やAPIの仕様等については深く検証していませんが、使い勝手が悪いという印象は個人的にはありません。APIの詳細は、以下の各リンクをご参照ください。
 
 - [OpenWeatherMap (https://openweathermap.org)](https://openweathermap.org)
-- [Yahoo (https://developer.yahoo.co.jp/webapi/map/openlocalplatform/v1/weather.html)](https://developer.yahoo.co.jp/webapi/map/openlocalplatform/v1/weather.html)
 
 ### **OpenWeatherMap**
 
 　OpneWeatherMapの無料APIで取得できる天気予報は、
-
-&emsp;
-
-### **Yahoo 気象予報API**
 
 &emsp;
 
